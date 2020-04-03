@@ -1,19 +1,23 @@
 package com.jse.app;
 
-import java.util.Random;
-import java.util.Scanner;
+public class RPSgame {
 
-public class RPSIf {
-
-	public static void main(String[] args) {
-		game();
+	public String RPSgame() {
+		private int userVal;
+		private int comVal;
 		
-	}
-	static void game() {
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		System.out.println("가위바위보 게임");
 		System.out.println("(1)가위   (2)바위   (3)보  ");
-		Scanner scanner = new Scanner(System.in);
+
 		int use = scanner.nextInt();
 		System.out.println("플레이어의 선택"+ use);
 		Random ran =new Random();
