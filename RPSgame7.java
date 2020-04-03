@@ -1,6 +1,6 @@
 package com.jse.app;
 
-public class RPSgame7 {
+public class RPSgame7 { //한마디로 가상. 디스크
 
 		private int userVal;
 		private int comVal;
@@ -8,7 +8,7 @@ public class RPSgame7 {
 		public void setUserVal(int userVal) {
 			this.userVal = userVal;
 		}
-		public int getuserValVal () {
+		public int getuserVal () {
 			return userVal;
 		}
 		public void setcomVal(int comVal) {

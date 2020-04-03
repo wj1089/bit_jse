@@ -6,6 +6,7 @@ public class Calculate {
 	private int num1;
 	private int num2;
 	private int num3;
+//	private int result;
 	
 	 public void setNum1(int num1) {
 		 this.num1 = num1;
