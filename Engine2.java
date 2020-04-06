@@ -14,6 +14,7 @@ public class Engine2 { // 실제로 보이는것 //메모리
 		Dice01 dicenum = null;
 		RPSgame7 rpsgame = null;
 		Kaup kaup = new Kaup();
+		GenderChecker gendernumber = null;
 		// 질문! 이걸 그냥 case에 넣어버리면 안되나요?? >> 이걸 넣어버리면 한가지 주소로 많은이용자들이 충돌하게된다.
 		// 그래서 그냥 위에 빼버려서 이런현상을 없게한다.
 		// null은 주소가 미설정상태.
@@ -107,47 +108,26 @@ public class Engine2 { // 실제로 보이는것 //메모리
 //				} else {
 //					result1 = "짝";
 //				}
-				System.out.println("컴퓨터 홀짝 결과 : " + result1);
-				;
-				if (expect.equals(result1)) {
-					System.out.println("매칭 결과 : 맞음 ");
-				} else {
-					System.out.println("매칭 결과 : 틀림 ");
-				}
-				break;
+//				System.out.println("컴퓨터 홀짝 결과 : " + result1);
+//				;
+//				if (expect.equals(result1)) {
+//					System.out.println("매칭 결과 : 맞음 ");
+//				} else {
+//					System.out.println("매칭 결과 : 틀림 ");
+//				}
+//				break;
 
 			case 7:
-//				GenCheck gender = new GenCheck();
-//				System.out.print("주민번호를 입력해주세요.(011231-1111222)");
-//				int ssn = scanner.nextInt();
-//				gender.setSsnNum(ssn); 
-//				rpsgame.setUserVal(user);
-////				char ch = ssn.charAt(7);
-////				rpsgame.setcomVal(ch);
+				gendernumber = new GenderChecker();
+				System.out.print("주민번호를 입력해주세요.(011231-1111222)");
+				String number = scanner.next();
+				gendernumber.setIdNumber(number); 
+				char gennum = number.charAt(7);
+				gendernumber.setGenderNumber(gennum);
+				String gennum1 = gendernumber.idcard();
+				System.out.println("귀하의 성별및 신분은 : "+ gennum1 +"입니다.");
+				break;
 				
-				
-				
-					break;
-				// String a = "";
-				// char c = '';
-				// case '1'
-//					char c = 0;
-//				switch (ch) {
-//				case '1':
-//				case '3':
-//					System.out.println("Man");
-//					break;
-//				case '2':
-//				case '4':
-//					System.out.println("Woman");
-//					break;
-//				case '5':
-//				case '6':
-//					System.out.println("Foreigner");
-//					break;
-//				default:
-//					System.out.println("Wrong");
-//				}
 				
 			case 8:// multi란 만약 랜덤이란 스케나 카오푸 같은걸 2번이상 쓸경우는 케이스 밖에다 적어준다. 
 				System.out.println("신체정보검사를 시작합니다.");
